@@ -1,0 +1,273 @@
+@charset "utf-8";
+/* CSS Document */
+/*通用设置*/
+*{
+	margin:0px auto; 
+	padding:0px;
+	font-size:12px;
+	list-style:none;
+	font-family: 宋体;
+	color:#522a06;}
+img{
+   border:0px;}
+body{
+	padding: 0px;
+	margin: 0px;
+	background:url(../images/bodybg.gif)}
+a{
+	color:#522a06;
+	text-decoration:none;}
+a:hover{
+	text-decoration:underline;}
+li{
+	list-style:none;
+	margin:0px;
+	padding:0px;}
+.clear{clear: both;}
+.header{
+	width:100%;
+	height:205px;
+	background-image:url(../images/bg.gif);
+	background-position:center;}
+.banner{
+	width:1000px;
+	height: 164px;
+	text-align: center;
+	margin:0px auto;}
+.logo{
+	float:left;
+	margin-top:38px;
+	margin-left:25px;}
+
+#nav{
+	height:40px;
+	background:url(../images/nav.jpg);
+}
+.nav_body{
+	width: 1000px;
+	text-align: center;
+	margin: 0px auto;
+}
+.nav_content{
+	float:center;
+	width:1000px;
+	font-weight:bolder;
+	color:#FFF;}
+.nav_content ul li{
+	float:left;
+	line-height: 40px;
+	height: 40px;
+	color:#fff;
+}
+.nav_content a{
+	color:#FFF;
+	float: left;
+	line-height:40px;
+	font-weight:bold;
+	text-align:center;}
+.nav_content a:hover{
+	color:#f9f603;
+	text-decoration:none;}
+.text{
+	width: 140px;
+	height: 19px;
+	margin-top: 8px;
+	background-color: #f8f5ee;
+}
+.button{
+	width: 44px;
+	height: 21px;
+	line-height: 19px;
+	color: #fff;
+	text-align: center;
+	background-color: #000;
+	border: 1px solid #f8f5ee;
+}
+.content{
+	margin:0 auto;
+	background-position:center top;
+	width:1000px;
+    clear:both;
+}
+.left{
+	float:left;
+    width:700px;
+}
+.right{
+	float:right;
+	width:300px;
+
+}
+.weizhi{
+	width:700px;
+	height:40px;
+	font-size:15px;
+}
+.weizhi p{
+	padding:20px 0px 0px 20px;
+}
+.head1{
+	margin:20px 0 0 0;
+	text-align: center;
+	font-weight: bolder;
+	font-size:20px;
+	height:40px;
+	border-bottom:1px solid #c9baa5;
+}
+.time{
+	height:40px;
+	width:700px;
+}
+.time p{
+	text-align: center;
+	margin-top: 5px;
+	font-size:12px;
+	color:#757575;
+}
+.first p{
+	line-height: 28px;
+	padding:px 10px 10px 10px;
+	font-size:14px;
+	font-weight: bolder;
+	text-indent: 2em;
+	text-align: left;
+}
+.first .zi{
+	padding: 10px;
+	border-bottom:1px solid #c9baa5;
+}
+.first h1{
+	text-align: center;
+}
+.next{
+	height:40px;
+	width:700px;
+}
+.shangyipian{
+	float:left;
+	height:40px;
+	width:350px;
+}
+.xiayipian{
+	float:right;
+	height:40px;
+	width:350px;
+}
+.shangyipian p{
+	float:left;
+	margin:10px;
+}
+.xiayipian p{
+	float:right;
+	margin:10px;
+}
+.right .gengxin{
+	clear: both;
+	float: right;
+	width:280px;
+	height: 220px;
+	margin:50px 20px 40px 10px;
+	background:url("../images/bg.png");
+	border:1px solid #c9baa5;
+}
+.gengxin1{
+	text-align: center;
+	margin-top:10px;
+	width:280px;
+}
+.gengxin li{
+	margin: 2px;
+	font-size: 20px;
+	line-height: 30px;
+	height: 30px;
+	text-align: left;
+}
+
+.mingjia{
+	width:280px;
+	margin-top:20px;
+	margin:0px auto;
+	float:right;
+	margin-left:2px;
+}
+.mingjia .img1{
+	height: 28px;
+	width: 300px; 
+	margin:0px auto;
+}
+.mingjia .img1 img{
+	position: relative;
+	left: 90px;
+}
+.mingjia .img2{
+	width: 362px;
+	height: 400px;
+	background: url("../images/show_bg.png");
+	background-repeat: no-repeat;
+	background-size:280px 380px;
+	margin:0px auto;
+}
+
+.mingjia .img2 img{
+	width: 224px;
+	margin:0px auto;
+	position: relative;
+	left: 30px;
+	top:30px;
+}
+.mingjia p{
+	width: 224px;
+	height: 200px;
+	position: relative;
+	top:33px;
+	right: 38px;
+}
+.mingjia .name{
+	color: #f00;
+	font-weight: bolder;
+}
+.mingjia .img{
+	float:left;
+	width: 280px;
+	height: 40px;
+	background: url("../images/view.png");
+	background-repeat: no-repeat;
+	background-position: right;
+	position: relative;
+	bottom: 100px;
+}
+.mingjia .before{
+	position: relative;
+	left: 30px;
+}
+.mingjia .next{
+	width: 30px;
+	height: auto;
+	position: relative;
+	left: 30px;
+}
+
+.footer {
+	width: 1000px;
+	margin: 0px auto;
+	clear: both;
+	background:url("../images/foot.gif");
+	background-position:center;	
+	padding:30px 0 0 0;
+	text-align:center;
+	height:105px;
+	}
+.footer ul li{
+	float:left;
+	position: relative;
+	left: 280px;
+}
+.footer p{
+	clear: both;
+	text-align: center;
+	margin-top:10px
+}
+.footer .line{
+	clear: both;
+	text-align: center;
+}
