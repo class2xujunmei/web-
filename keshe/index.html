@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Music Castle</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+<div id=win style="display:none; POSITION:absolute; left:50%; top:50%; width:300px; height:200px; margin-left:-300px; margin-top:-200px; border:1px solid #888; background-color:#e1f1ff; text-align:center"><p class="zx">登录到我的music castle</p>&nbsp;&nbsp;账户：<input type="text" style="width: 150px;height: 30px;margin:10px 5px;"><br />&nbsp;&nbsp;密码：<input type="text" style="width: 150px;height: 30px; margin:5px 5px;"/><br/><p class="anniu"><input type="button" value="登录" style="font-size: 14px;padding: 5px; margin: 8px;" /><a href="javascript:openAdd();"><input type="button" value="注册" style="font-size: 14px;padding: 5px;margin: 8px;" /></a></p><a href="javascript:closeLogin();">关闭登录框</a></div>
+<div id=win1 style="display:none; POSITION:absolute; left:50%; top:50%; width:500px; height:350px; margin-left:-300px; margin-top:-200px; border:1px solid #888; background-color:#e1f1ff; text-align:center"><p class="zx">注册我的music castle</p>&nbsp;&nbsp;账户名：<input type="text" style="width: 150px;height: 30px;margin:10px 5px;"><br />&nbsp;&nbsp;密 &nbsp;码：&nbsp;<input type="text" style="width: 150px;height: 30px; margin:5px 5px;"/><br/>&nbsp;&nbsp;邮 &nbsp;箱：&nbsp;<input type="text" style="width: 150px;height: 30px;margin:10px 5px;"><br />&nbsp;&nbsp;手机号：<input type="text" style="width: 150px;height: 30px; margin:5px 5px;"/><br/><p>性别：<input type="radio" name="gender" value="man">男<input type="radio" name="gender" value="woman">女</p><input type="button" value="注册" style="font-size: 14px;padding: 5px;margin: 8px;" /></p><a href="javascript:closeAdd();">关闭注册框</a></div>
+<div class="header">
+  <div class="tou"> <a href="#"><img src="images/logo.png" /></a>
+    <input type="text" />
+    <a href="#" class="sousuo">搜 索</a> 
+    <div><a href="javascript:openLogin();" class="denglu">登 录</a></div><div><a href="javascript:openAdd();" class="zhu">注 册</a></div>
+    </div>
+</div>
+<div class="nav" id="nav">
+  	<ul class="ul">
+    <li class="lii"><a href="#">首 页</a></li>
+    <li class="lii"><a href="#">每日推荐</a></li>
+    <li class="lii"><a href="#">私人FM</a></li>
+    <li class="lii"><a href="#">今日歌单</a></li>
+    <li class="lii"><a href="#">排行榜</a></li>
+    <li class="lii"><a href="#">音乐直播</a></li>
+    <li class="lii"><a href="#">我的收藏</a></li>
+    <li class="lii"><a href="#">个性换肤</a></li>
+    <li class="lii" id="l00"><a href="#">更多精彩</a>
+      <ul id="ul">
+      <li><a href="#">曲目分类</a></li>
+      <li><a href="#">歌手分类</a></li>
+      <li><a href="#">演出直播</a></li>
+      <li><a href="#">最新MV</a></li>
+      </ul>
+  </ul>
+  </li>
+</div>
+<!--banner-->
+<div class="wrap" id="wrap">
+  <ul id="pic">
+    <li><a href="#"><img src="images/b6.jpg"></a></li>
+    <li><a href="#"><img src="images/b1.jpg"></a></li>
+    <li><a href="#"><img src="images/b2.jpg"></a></li>
+    <li><a href="#"><img src="images/b3.jpg"></a></li>
+    <li><a href="#"><img src="images/b4.jpg"></a></li>
+  </ul>
+<ol id="list">
+<li class="on">1</li>
+<li>2</li>
+<li>3</li>
+<li>4</li>
+<li>5</li>
+</ol>
+</div>
+<div class="main">
+  <div class="top">
+    <div class="left"><a href="#"><img src="images/left.jpg" class="im" /></a>
+      <div class="list">
+        <div class="tezuo" id="nav_box">
+          <ul>
+            <li class="menuOn" id="mod1" onmouseover="swit('mod','slidingList','1');this.blur();">飙升榜</li>
+            <li class="menuNo" id="mod2" onmouseover="swit('mod','slidingList','2');this.blur();">新歌榜</li>
+            <li class="menuNo" id="mod3" onmouseover="swit('mod','slidingList','3');this.blur();">原创榜</li>
+            <li class="menuNo" id="mod4" onmouseover="swit('mod','slidingList','4');this.blur();">歌手榜</li>
+          </ul>
+        </div>
+        <div  class="slidingList" id="slidingList1">
+          <div class="rytsz">
+            <p>薛之谦</p>
+            <a href="#"><img src="images/ts.jpg" /></a>
+            <ul>
+              <li><a href="">《像风一样》</a></li>
+              <li><a href="">《狐狸》</a></li>
+              <li><a href="">《暧昧》</a></li>
+              <li><a href="">《别》</a></li>
+            </ul>
+          </div>
+          <div class="rytsy">
+            <p>王菲</p>
+            <a href="#"><img src="images/ts1.jpg" /></a>
+            <ul>
+              <li><a href="">《无问西东》</a></li>
+              <li><a href="">《匆匆那年》</a></li>
+              <li><a href="">《因为爱情》</a></li>
+              <li><a href="">《红豆》</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="slidingList_none" id="slidingList2">
+          <div class="xxsh">
+            <div class="xxshz">
+              <p>毛不易</p>
+              <a href="#"><img src="images/xx.jpg" /></a>
+              <ul>
+                <li><a href="">《像我这样的人》</a></li>
+                <li><a href="">《消愁》</a></li>
+                <li><a href="">《无问》</a></li>
+                <li><a href="">《借》</a></li>
+              </ul>
+            </div>
+            <div class="xxshy">
+              <p>张碧晨</p>
+              <a href="#"><img src="images/xx1.jpg" /></a>
+              <ul>
+                <li><a href="">《凉凉》</a></li>
+                <li><a href="">《年轮》</a></li>
+                <li><a href="">《下一秒》</a></li>
+                <li><a href="">《她说》</a></li>
+                <li><a href="">《花心》</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="slidingList_none" id="slidingList3">
+          <div class="teyou">
+            <div class="teyz">
+              <p>林俊杰</p>
+              <a href="#"><img src="images/sz.jpg" /></a>
+              <ul>
+                <li><a href="">《可惜没如果》</a></li>
+                <li><a href="">《当你》</a></li>
+                <li><a href="">《背对背拥抱》</a></li>
+                <li><a href="">《不为谁而作的歌》</a></li>
+                <li><a href="">《小酒窝》</a></li>
+              </ul>
+            </div>
+            <div class="teyy">
+              <p>张杰</p>
+              <a href="#"><img src="images/n1.jpg" /></a>
+              <ul>
+                <li><a href="">《我们都一样》</a></li>
+                <li><a href="">《三生三世》</a></li>
+                <li><a href="">《一念之间》</a></li>
+                <li><a href="">《你就不要想起我》</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="slidingList_none" id="slidingList4">
+          <div class="qyjy">
+            <div class="qyjyz">
+              <p>鹿晗</p>
+              <a href="#"><img src="images/qy.jpg" /></a>
+              <ul>
+                <li><a href="">《追梦赤子心》</a></li>
+                <li><a href="">《我们的明天》</a></li>
+                <li><a href="">《让我留在你身边》</a></li>
+                <li><a href="">《春雨里洗过的太阳》</a></li>
+              </ul>
+            </div>
+            <div class="qyjyy">
+              <p>GAI</p>
+              <a href="#"><img src="images/qy1.jpg" /></a>
+              <ul>
+                <li><a href="">《思念是一种病》</a></li>
+                <li><a href="">《没时间后悔》</a></li>
+                <li><a href="">《火锅底料》</a></li>
+                <li><a href="">《凡人歌》</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="right">
+      <div class="right1">
+        <p class="zx">我的music castle</p>
+        &nbsp;&nbsp;账户：
+        <input type="text" />
+        <br />
+        &nbsp;&nbsp;密码：
+        <input type="text" />
+        <p class="anniu">
+          <a href="javascript:openLogin();"><input type="button" value="登录" /></a>
+          <a href="javascript:openAdd();"><input type="button" value="注册" /></a>
+        </p>
+        <p class="zt"><img src="images/sun.gif" />&nbsp;全球榜</p>
+        <p class="tu"> <a href="#"><img src="images/zt_01.jpg" /> </a><a href="#"><img src="images/zt_02.jpg" /></a> <a href="#"><img src="images/zt_03.jpg" /></a> </p>
+        <p class="zt"><img src="images/heart.png" >&nbsp;给他打榜&nbsp;<img src="images/heart.png" ></p>
+        <p class="lx"> <a href="#"><img src="images/z.jpg" /></a><a href="#"><img src="images/xx1.jpg" /></a><a href="#"><img src="images/qy1.jpg" /></a><br/><a href="#"><img src="images/sz.jpg" /></a><a href="#"><img src="images/ts.jpg" /></a><a href="#"><img src="images/ts1.jpg" /></a></p>
+      </div>
+    </div>
+  </div>
+  <div class="bottom">
+    <div class="xin">
+      <div class="zuo">
+        <div class="zuo1"><p class="h1">星闻乐事</p><img src="images/n.png" class="i0"></div>
+        <a href="#"><img src="images/jj1.jpg" onmouseover="stoptupian()" onmouseout="dongqilai()" id="imgs" style="width:210px; height:170px"/></a>
+        <p class="gd">JJ首度在筹备多时的基地“JFJ圣所”举行线上专辑发布会，大方分享气派的全新空间外，也热闹为首波双主打《伟大的渺小》＋《Until the Day》所创下的好成绩...</p>
+        <a href="#" class="gd1">更多>></a>
+      </div>
+      <div class="zhong">
+        <p><img src="images/1.gif">&nbsp;猜你喜欢</p>
+        <ul>
+          <li class="t1"><a href="#"><img src="images/w.jpg"></a><a href="#"><img src="images/b.jpg"></a><a href="#"><img src="images/g.jpg"></a><a href="#"><img src="images/r.jpg"></a><a href="#"><img src="images/jj2.jpg"></a></li>
+          <li class="t2"><a href="#" class="m">吴亦凡</a><a href="#" class="m">贝多芬</a><a href="#" class="m">张根硕</a><a href="#" class="m">刘若英</a><a href="#" class="m">林俊杰</a></li>
+        </ul>
+        <p><img src="images/1.gif">&nbsp;新碟首发</p>
+        <ul>
+          <li class="t3"><a href="#"><img src="images/jq.jpg"></a><a href="#"><img src="images/zz.jpg"></a><a href="#"><img src="images/wb.jpg"></a><a href="#"><img src="images/cc.jpg"></a></li>
+          <li class="t4"><a href="#" class="m">《伟大的渺小》</a><a href="#" class="m">《狐狸》</a><a href="#" class="m">《我不聊生》</a><a href="#" class="m">《My My My》</a></li>
+          <li class="t5"><a href="#" class="m">林俊杰</a><a href="#" class="m">薛之谦</a><a href="#" class="m">熊梓淇</a><a href="#" class="m">特洛耶希文</a></li>
+        </ul>
+      </div>
+      <div class="you">
+        <p><img src="images/dengpao.gif">&nbsp;King 榜</p>
+        <div class="you1"><img src="images/01.jpg" ></div>
+      </div>
+    </div>
+    <div class="xu"> 
+      <p class="yan">合作伙伴:</p>
+      <img src="images/p1.jpg">
+      <img src="images/p2.jpg">
+      <img src="images/p3.jpg">
+      <img src="images/p4.jpg">
+      <img src="images/p5.jpg">
+      <img src="images/p6.jpg">
+      <img src="images/p7.jpg">
+      <img src="images/p8.jpg">
+      <img src="images/p9.jpg">
+      <img src="images/p10.jpg">
+      <img src="images/p11.jpg">
+      <img src="images/p12.jpg">
+      <img src="images/p13.jpg">
+      <img src="images/p14.jpg">
+
+    </div>
+  </div>
+</div>
+<div class="foot">
+  <p class="dizhi">地址：中国石家庄市裕华区南二环20号 河北师范大学-软件学院</p>
+  <p class="banquan">版权所有 石家庄河北师范大学软件学院 xujunmei</p>
+  <p class="banquan">联系电话： 0311-80786200    80786204</p>
+</div>
+</body>
+<script src="js/jquery.js"></script>
+<script>
+  $(function(){
+    $('#l00').mouseover(function(){
+      $(this).children('#ul').show();
+    })
+  })
+  $(function(){
+    $('#l00').mouseout(function(){
+      $(this).children('#ul').hide();
+    })
+  })
+function openLogin(){
+   document.getElementById("win").style.display="";
+}
+function closeLogin(){
+   document.getElementById("win").style.display="none";
+}
+function openAdd(){
+   document.getElementById("win1").style.display="";
+}
+function closeAdd(){
+   document.getElementById("win1").style.display="none";
+}
+  // //导航
+  
+  // /*home图片自动切换*/
+window.onload=init;
+var n=1; //图片标记数
+var dingshi; //让图片动的定时器
+function init(){
+dingshi=window.setInterval("tupian()",1000);
+}
+//更换图片
+function tupian(){
+var obj=document.getElementById("imgs");
+n++;
+if(n>=4){
+n=1;
+}
+obj.src="images/jj"+n+".jpg";
+}
+//鼠标离开图片动起来
+function dongqilai(){
+dingshi=window.setInterval("tupian()",1000);
+}
+//鼠标放上图片停止
+function stoptupian(){
+window.clearInterval(dingshi);
+}
+
+//banner
+ window.onload=function(){
+ var wrap=document.getElementById('wrap'),
+ pic=document.getElementById('pic').getElementsByTagName("li"),
+ list=document.getElementById('list').getElementsByTagName('li'),
+ index=0,
+ timer=null;
+ 
+ // 定义并调用自动播放函数
+ timer = setInterval(autoPlay, 2000);
+ 
+ // 鼠标划过整个容器时停止自动播放
+ wrap.onmouseover = function () {
+ clearInterval(timer);
+ }
+ 
+ // 鼠标离开整个容器时继续播放至下一张
+ wrap.onmouseout = function () {
+ timer = setInterval(autoPlay, 2000);
+ }
+ // 遍历所有数字导航实现划过切换至对应的图片
+ for (var i = 0; i < list.length; i++) {
+ list[i].onmouseover = function () {
+ clearInterval(timer);
+ index = this.innerText - 1;
+ changePic(index);
+ };
+ };
+ 
+ function autoPlay () {
+ if (++index >= pic.length) index = 0;
+ changePic(index);
+ }
+ 
+ // 定义图片切换函数
+ function changePic (curIndex) {
+ for (var i = 0; i < pic.length; ++i) {
+ pic[i].style.display = "none";
+ list[i].className = "";
+ }
+ pic[curIndex].style.display = "block";
+ list[curIndex].className = "on";
+ }
+ 
+ };
+$(document).ready(function(){
+$(".nav_li").mouseover(function(){
+this.className = "mon"; 
+$(this).next("div").slideDown(500);
+  });
+  $(".nav_ul").mouseleave(function(){
+    $(this).children("div").slideUp(500);
+  });
+});
+/*home中滑动出现相应内容*/
+function swit(tag,cont,modk){
+	for(i=1;i<5;i++){
+		if(i==modk){
+			document.getElementById(tag+i).className="menuOn";
+		    document.getElementById(cont+i).className="slidingList";
+		}else{
+			 document.getElementById(tag+i).className="menuNo";
+			 document.getElementById(cont+i).className="slidingList_none";
+		}
+	}
+}	
+</script>
+</html>
